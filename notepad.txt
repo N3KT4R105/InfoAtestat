@@ -1,1 +1,15 @@
 30
+SELECT * from Reparatii WHERE COST>=200 ORDER BY Data_finalizare
+DELETE * from Reparatii WHERE Garantie<=12
+31
+SELECT * from Studenti WHERE Facultatea Like "Medicina"
+UPDATE Studenti SET Nume LIKE "Antonescu" WHERE Nr_matricol=5662
+32
+SELECT * from Polite WHERE Oferta_actuala=1 AND Durata=6
+UPDATE Polite SET Pret=Pret=0.05*Pret WHERE durata=12 AND Oferta_actuala=1
+33
+SELECT * from Locuinte WHERE Disponibila=1 ORDER BY Pret_lunar
+UPDATE Locuinte SET Pret_lunar=Pret_lunar-0.04*Pret_lunar WHERE Disponibila=0
+34
+SELECT * from Melodii WHERE Data_aparitie<="1990-01-01" AND Data_aparitie>="1990-12-31"ORDER BY Artist
+DELETE * from Melodii WHERE
